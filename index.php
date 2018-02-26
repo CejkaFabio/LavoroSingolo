@@ -13,7 +13,7 @@
     <script type="text/javascript" src="script/JQuery.js"></script>
      <style>
         table, th, td {
-            border: 1px solid black;
+            border: 0px solid black;
         }
         .button {
             background-color: #4CAF50;
@@ -31,7 +31,7 @@
 
 </head>
 <body>
-<h2 align="center">CRUD Bartolini Simone</h2>
+<h2 align="center">Tabella Cejka Fabio Matthias</h2>
 <br>
 <div class="container">
     <div class="col-xs-8" align="left">

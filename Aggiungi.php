@@ -85,6 +85,6 @@ VALUES ('$nome', '$cognome', '$email')";
         }
         echo "</table>";
         echo "</div>";
-        header('Location: http://localhost/SQLBartoliniCejka-master/index.php?');
+        header('Location: http://localhost/LavoroSingolo/index.php?');
         $conn->close();
 }

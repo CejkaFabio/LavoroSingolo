@@ -89,6 +89,6 @@ if(isset($_POST['nome'])&&(isset($_POST['cognome'])&&(isset($_POST['email'])))) 
         echo "Error updating record: " . $conn->error;
     }
 
-header('Location: http://localhost/SQLBartoliniCejka-master/index.php?');
+header('Location: http://localhost/LavoroSingolo/index.php?');
     $conn->close();
 }

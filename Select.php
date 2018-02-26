@@ -11,6 +11,17 @@ if ($conn->connect_error) {
 }
 $sql = "SELECT * FROM registro";
 
+echo "<table class=\"table table-striped\" id=\"tabella\">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th><button onclick=\"Ordinamento('nome');\">Nome</button></th>
+            <th><button onclick=\"Ordinamento('cognome');\">Cognome</button></th>
+            <th><button onclick=\"Ordinamento('email');\">Email</button></th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        </thead>";
 $result=$conn->query($sql);
     while($row=$result->fetch_assoc()){
         echo "<tr>";
@@ -20,7 +31,7 @@ $result=$conn->query($sql);
         echo "<td name='email'>".$row['Email']."</td>";
         $riga = $row['Id'];
         echo "<td><button type=\"submit\"  id ='up' class=\"btn btn-primary btn-block\" onclick='Update($riga);'>Update</button></form></td>";
-        echo "<td><button name='elimina' id='del' type=\"submit\" class=\"btn btn-danger btn-block\" onclick='Delete($riga);'>Delete</button></td>";
+        echo "<td><button id='del' type=\"submit\" class=\"btn btn-danger btn-block\" onclick='Delete($riga);'>Delete</button></td>";
         echo "</tr>";
     }
 echo "</table>";
